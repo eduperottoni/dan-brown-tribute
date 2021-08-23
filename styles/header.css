@@ -52,13 +52,13 @@ header nav#menu ul li a:hover{
     color: var(--medium-gray);
 }
 
-header nav#menu ul li div.underline{
+div.underline{
     width: 0px;
     height: 2px;
     background-color: var(--medium-gray);
 }
 
-header nav#menu ul li div.underline.on{
+div.underline.on{
     animation: underline 1s forwards;
 }
 
