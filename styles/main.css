@@ -1,0 +1,76 @@
+main{
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    margin: 40px 0;
+    font-size:30pt;
+}
+
+section#profile{
+    width: 100%;
+    margin:40px;
+
+    display: flex;
+    justify-content: center;
+}
+
+section#profile div#profile-img{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+
+section#profile img{
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+
+    border-radius: 50%;
+
+    object-fit:cover;
+}
+
+section#profile div#profile-inf{
+    max-width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    font-size: 18pt;
+}
+
+section#profile div#profile-inf div.profile-inf-box{
+    background-color: var(--medium-gray);
+    padding:10px;
+    border-radius:5px
+}
+
+section.colorbox{
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid var(--ligth-dark);
+    padding:0 10px 10px 10px;
+}
+
+section.colorbox h2.colorbox-title{
+    text-align:center;
+    font-size: 20pt;
+    margin: 10px 0;
+}
+
+section#abstract{
+    background-color: var(--red);
+}
+
+section#abstract p#abstract-text{
+    text-align:justify;
+    font-weight: 400;
+    font-size: 14pt;
+}
+

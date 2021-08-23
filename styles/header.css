@@ -44,7 +44,7 @@ header nav#menu ul li{
 
 header nav#menu ul li a{
     text-decoration:none;
-    color: #000;
+    color:var(--ligth-dark);
     transition: all 0.5s;
 }
 

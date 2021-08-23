@@ -3,12 +3,15 @@
     padding:0;
     box-sizing:border-box;
     font-family: 'Montserrat', sans-serif;
+    color: var(--ligth-dark)
 }
 
 :root{
+    --ligth-dark:#232323;
     --dark-gray: #5c5c5c;
     --light-gray: #efefef;
     --medium-gray: #c4c4c4;
+    --red:#e44e4e;
 }
 
 html, body{
