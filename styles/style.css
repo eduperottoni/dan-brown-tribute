@@ -2,4 +2,15 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --dark-gray: #5c5c5c;
+    --light-gray: #efefef;
+    --medium-gray: #c4c4c4;
+}
+
+html, body{
+    width: 100%;
 }
