@@ -46,7 +46,7 @@ section#profile div#profile-inf{
 }
 
 section#profile div#profile-inf div.profile-inf-box{
-    background-color: var(--medium-gray);
+    background-image: var(--medium-gray);
     padding:10px;
     border-radius:5px
 }
@@ -54,8 +54,8 @@ section#profile div#profile-inf div.profile-inf-box{
 section.colorbox{
     width: 100%;
     border-radius: 15px;
-    border: 2px solid var(--ligth-dark);
-    padding:0 10px 10px 10px;
+    padding:10px;
+    box-shadow: 10px 10px 20px var(--medium-gray);
 }
 
 section.colorbox h2.colorbox-title{
@@ -65,7 +65,7 @@ section.colorbox h2.colorbox-title{
 }
 
 section#abstract{
-    background-color: var(--red);
+    background-image: radial-gradient(circle at 93.77% 86.73%, #0045d7 0, #223fd2 25%, #4539cd 50%, #5b32c7 75%, #6b29c1 100%);
 }
 
 section#abstract p#abstract-text{
@@ -74,7 +74,7 @@ section#abstract p#abstract-text{
     font-size: 14pt;
 }
 
-section#quote{
+section.quote{
     margin: 40px 0;
     font-size: 20pt;
     text-align: center;
@@ -83,15 +83,15 @@ section#quote{
     flex-direction: column;
 }
 
-section#quote q#quote-text:before{
+section.quote q.quote-text:before{
     font-family: 'Besley', serif;
 }
 
-section#quote q#quote-text:after{
+section.quote q.quote-text:after{
     font-family: 'Besley', serif;
 }
 
-section#quote address#quote-author{
+section.quote address.quote-author{
     font-size: 15pt;
     width: fit-content;
     margin: 0 0 0 auto;
@@ -100,17 +100,109 @@ section#quote address#quote-author{
     flex-direction:column;
 }
 
-section#quote address#quote-author a{
+section.quote address.quote-author a{
     text-decoration: none;
     font-weight: 700;
     transition: 0.5s;
-    color: var(--medium-gray);
+    color: var(--medium-gray2);
 }
 
-section#quote address#quote-author a:hover{
+section.quote address.quote-author a:hover{
     color: var(--ligth-dark);
 }
 
-section#quote address#quote-author div.underline{
+section.quote address.quote-author div.underline{
     background-color: var(--ligth-dark);
+    height: 2px;
+}
+
+section#timeline{
+    background-image: var(--green);
+}
+
+div#timeline-cont{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 auto;
+}
+
+
+div.timeline-cont-fact{
+    margin: 10px 0;
+    font-size:15pt;
+    width: 100%;
+    font-weight: 700;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+div.timeline-cont-fact-desc{
+    width: 100%;
+    background-image: var(--medium-gray);
+    padding:5px;
+}
+
+div.timeline-cont-fact-desc, div.timeline-cont-fact-year{
+    border-radius: 5px;
+}
+
+
+p.timeline-cont-fact-desc-text{
+    padding-left: 100px;   
+}
+
+div.timeline-cont-fact-year{
+    padding:10px 5px;
+    width: fit-content;
+    background-color: var(--ligth-dark);
+    color: var(--light-gray);
+
+    position: absolute;
+    left: 15px;
+}
+
+section#books{
+    background-image: var(--yellow);
+}
+
+div#books-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+div.books-cont-cover{
+    width: 28%;
+    max-width: 300px;
+    min-width: 210px;
+    padding: 15px 10px;
+}
+
+div.books-cont-cover a{
+    width: 100%;
+}
+
+div.books-cont-cover a img{
+    width: 100%;
+    box-shadow: 5px  5px 15px var(--ligth-dark);
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+div.books-cont-cover a img:hover{
+    animation: up360down 1s forwards;
+}
+
+@keyframes up360down{
+    0%{
+        transform:rotateZ(0);
+    }
+    100%{
+        transform:rotateZ(360deg);
+    }
 }
