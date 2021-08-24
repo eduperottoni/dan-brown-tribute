@@ -206,3 +206,23 @@ div.books-cont-cover a img:hover{
         transform:rotateZ(360deg);
     }
 }
+
+section#knowmore{
+    margin: 20px 0;
+    font-size: 14pt;
+    text-align:center;
+}
+
+section#knowmore a{
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;;
+}
+
+section#knowmore a:hover{
+    color: var(--medium-gray2);
+}
+
+footer{
+    font-family: 'Playfair Display', serif;
+}
