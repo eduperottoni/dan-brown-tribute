@@ -71,6 +71,17 @@ div.underline.on{
     }
 }
 
+
+header div#menu-icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+header div#menu-icon img{
+    width: 65px;
+}
+
 header nav#menumobile{
     display: none;
     background-image: var(--dark-gray);
@@ -91,8 +102,25 @@ header nav#menumobile ul li{
     margin: 0 auto;
 }
 
+@media screen and (max-width:840px){
+    header{
+        justify-content: space-between;
+    }
 
+    header div#logo{
+        flex:2;
+    }
 
+    header nav#menu{
+        display: none;
+    }
+
+    header div#menu-icon{
+        flex:1;
+        display: flex;
+    }
+   
+}
 
 
 
