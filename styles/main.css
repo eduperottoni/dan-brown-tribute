@@ -65,7 +65,7 @@ section.colorbox h2.colorbox-title{
 }
 
 section#abstract{
-    background-image: radial-gradient(circle at 93.77% 86.73%, #0045d7 0, #223fd2 25%, #4539cd 50%, #5b32c7 75%, #6b29c1 100%);
+    background-image: var(--green);
 }
 
 section#abstract p#abstract-text{
@@ -166,7 +166,7 @@ div.timeline-cont-fact-year{
 }
 
 section#books{
-    background-image: var(--yellow);
+    background-image: var(--green);
 }
 
 div#books-cont{
